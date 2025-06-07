@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 // 1. 先定义好每个路由对应的组件（懒加载写法更佳）
 const home = () => import('@/views/Home.vue')
 const coursePlanning = () => import('@/views/CoursePlanning.vue')
-
+const auth = () => import('@/views/Auth.vue')
 // 2. 定义路由表：path → component 映射
 const routes = [
     {
@@ -15,6 +15,11 @@ const routes = [
         path: '/course-planning',
         name: 'course-planning',
         component: coursePlanning,
+    },
+    {
+        path: '/auth',
+        name: 'auth',
+        component: auth,
     },
 ]
 
