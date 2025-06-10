@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 const home = () => import('@/views/Home.vue')
 const coursePlanning = () => import('@/views/CoursePlanning.vue')
 const auth = () => import('@/views/Auth.vue')
+const register  = () => import('@/views/Register.vue')
 // 2. 定义路由表：path → component 映射
 const routes = [
     {
@@ -20,6 +21,11 @@ const routes = [
         path: '/auth',
         name: 'auth',
         component: auth,
+    },
+    {
+        path: '/register',
+        name: 'register',
+        component: register,
     },
 ]
 

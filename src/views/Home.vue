@@ -4,8 +4,8 @@
 
 <template>
   <div class="flex flex-col items-center py-25 bg-base-100">
-    <div class="absolute left-0 -translate-x-1/3 bottom-0 pointer-events-none" aria-hidden="true">
-      <div class="w-200 h-200 rounded-full bg-gradient-to-br from-blue-300 opacity-70 blur-[180px]"></div>
+    <div class="absolute left-0 -translate-x-2/3 bottom-0 pointer-events-none" aria-hidden="true">
+      <div class="w-200 h-200 rounded-full bg-gradient-to-br from-blue-300 opacity-60 blur-[200px]"></div>
     </div>
     <header class="text-center space-y-2 mb-15">
       <h1 class="text-5xl font-extrabold">智能学习助手</h1>
@@ -25,8 +25,8 @@
           创建账户以保存您的学习进度和个性化推荐
         </p>
         <div class="flex justify-center space-x-4">
-          <button class="btn btn-outline">登录</button>
-          <button class="btn btn-primary">注册账户</button>
+          <router-link to="/auth" class="btn btn-outline">登录</router-link>
+          <router-link to="/register" class="btn btn-primary">注册账户</router-link>
         </div>
       </div>
     </div>
